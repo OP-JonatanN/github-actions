@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: install ci
+        run: npm ci
   run_test:
     needs: install_dependencies
     runs-on: ubuntu-latest
