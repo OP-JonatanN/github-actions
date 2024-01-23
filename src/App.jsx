@@ -1,14 +1,10 @@
 import MainContent from './components/MainContent';
-import logo from './assets/images/logo.png';
 
 function App() {
   return (
     <>
       <header>
-        <div id='logo-img'>
-          <img src={logo} />
-        </div>
-        <h1>Hello World</h1>
+        <h1>Getting Started with Github Actions</h1>
       </header>
       <MainContent />
     </>
