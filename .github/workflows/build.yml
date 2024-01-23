@@ -1,10 +1,11 @@
-name: Build website
+name: Build_website
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 jobs:
   build:
+    if: github.event.pull_request.merged = true
     runs-on: ubuntu-latest
     - name: Get code
       uses: actions/checkout@v4
